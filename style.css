@@ -1,0 +1,39 @@
+/* Adicionar estilo para o body como color e background */
+body
+{
+    color:rgb(255, 255, 255);
+    background-color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+  /* Adicionar estilo para a class heading como width e font-size */
+.heading
+{
+    width:80%;
+    font-size: 22px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+  /* Adicionar estilo para a class nameOfObjects como color */
+.nameOfObjects, #resultObjectName, #resultObjectAccuracy
+{
+    font-size: 15px;
+}
+
+label
+{
+    font-size: 19;
+}
+
+  /* Adicionar estilo para o id camera como border, width e height */
+#camera
+{
+    border:3px groove white;
+    width:350px;
+    height:300px;
+}
+
+  /* Juntar o id resultObjectName a class nameOfObjects */
+
+
+  /*  Juntar o id resultObjectAccuracy a class nameOfObjects */

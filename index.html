@@ -1,0 +1,83 @@
+ 
+<html>
+  <head>
+    <title>Identificador de Imagens</title>
+  <!-- Links Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <!-- Link ml5.js -->
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <!-- Link Webcam.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <!-- Adicione o link para o style.css -->
+  <link rel="stylesheet" href="style.css"> 
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <!-- Adicionar um tag h3 com a class="btn btn-default heading"-->
+     <h3 class="btn btn-default heading">IDENTIFICADOR DE IMAGENS</h3>
+      <br><br>
+
+      <p style="font-size: 22px;">O modelo foi treinado para indentificar estes objetos: </p>
+      <b class="nameOfObjects">
+        <hr>
+        Cubo
+        <hr>
+        Messi
+        <hr>
+        Mouse
+        <hr>
+        Caneta
+        <hr>
+        Livro
+        <hr>
+
+      </b>
+      <!-- Escreva uma tag b com a class="nameOfObjects" e dentro dela 
+       o nome dos objetos que você utilizou no modelo. Forneça a tag hr
+       para separar um a um. Não esqueça de fechar a tag b no final-->
+      
+      <label>Visualização da webcam - </label>
+      <!-- Adicione uma div com o id="camera" para a visualização 
+        em tempo real da webcam -->
+        <div id="camera"></div>
+
+      <br><br>
+      <!-- Adicione uma div com o id="result" para conter a imagem 
+        capturada pela webcam -->
+        <div id="result"></div>
+
+      <br><br>
+
+      <!-- Adicione um button para capturar a imagem com 
+        onclick="takeSnapshot();" e class="btn btn-info"-->
+      <button onclick="takeSnapshot()" class="btn btn-warning">Capturar Imagem</button>
+      <br><br>
+
+      <!-- Adicione um button que compare a imagem capturada com 
+        a imagem modelo onclick="check();" e class="btn btn-success"-->
+        <button onclick="check()" class="btn btn-success">Identificar Imagem</button>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Objeto : <span id="resultObjectName"></span> <!-- Adicione aqui uma tag span com o id="resultObjectName" --> </p>
+      <p style="font-size: 22px;">Precisão : <span id="resultObjectAccuracy"></span><!-- Adicione aqui uma tag span com o id="resultObjectAccuracy" --> </p>
+    </center>
+
+  </div>
+  <!-- Adicione o link para o main.js -->
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
